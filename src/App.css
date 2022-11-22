@@ -34,10 +34,50 @@ body {
     flex-direction: column;
   }
 }
-
+/* ------- HERO ------- */
 .hero {
   background: rgb(81, 79, 79);
   color: bisque;
+  justify-content: space-around;
+}
+
+.hero .left {
+  background: rgb(220, 11, 11);
+  display: flex;
+  justify-content: end;
+  flex: 2;
+  padding: 20px;
+}
+.hero .left img {
+  border-radius: 50%;
+  height: 400px;
+  width: 400px;
+}
+
+.hero .right {
+  background: rgb(15, 59, 189);
+  display: flex;
+  flex: 3;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+.hero .knowmore-btn {
+  width: 200px;
+}
+
+@media screen and (max-width: 612px) {
+  .hero {
+    flex-direction: column;
+  }
+  .hero .left {
+    justify-content: center;
+  }
+  .hero .left img {
+    height: 200px;
+    width: 200px;
+  }
 }
 .about {
   background: rgb(222, 132, 132);
