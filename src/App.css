@@ -5,6 +5,13 @@ body {
 
 .section {
   display: flex;
+  padding: 50px 8px;
+}
+
+@media screen and (min-width: 1020px) {
+  .section {
+    padding: 50px 100px;
+  }
 }
 /* ----------------------NAV BAR-----------------*/
 .navbar {
@@ -34,7 +41,7 @@ body {
     flex-direction: column;
   }
 }
-/* ------- HERO ------- */
+/* --------------- HERO ----------------- */
 .hero {
   background: rgb(81, 79, 79);
   color: bisque;
@@ -79,19 +86,69 @@ body {
     width: 200px;
   }
 }
+
+/* -------------ABOUT--------- */
 .about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background: rgb(222, 132, 132);
   color: rgb(56, 43, 28);
 }
 
+.about p {
+  max-width: 800px;
+  text-align: center;
+}
+
+/* ---------CARDS-------- */
 .cards {
   background: rgb(81, 79, 79);
   color: bisque;
+  display: flex;
+  justify-content: space-around;
 }
+
+/* ------------CARD----------- */
+.card {
+  background: rgb(251, 251, 251);
+  margin: 8px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #000;
+  border-radius: 10%;
+}
+.card h3 {
+  margin: 7px;
+}
+
+.card p {
+  margin: 5px;
+}
+.card img {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 612px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    margin: 16px auto;
+    width: 100%;
+    border-radius: 10px;
+  }
+}
+/* -------------SIGNUP--------------- */
 .sign-up {
   background: rgb(70, 33, 33);
   color: rgb(216, 200, 181);
 }
+
+/* ----------------FOOTER-------------- */
 .footer {
   background: rgb(205, 158, 158);
   color: rgb(116, 71, 16);
