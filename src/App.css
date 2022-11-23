@@ -16,7 +16,7 @@ body {
 /* ----------------------NAV BAR-----------------*/
 .navbar {
   color: aliceblue;
-  background: #000;
+  background: rgb(77, 77, 77);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -43,13 +43,14 @@ body {
 }
 /* --------------- HERO ----------------- */
 .hero {
-  background: rgb(81, 79, 79);
+  background: rgb(222, 218, 218);
+
   color: bisque;
   justify-content: space-around;
 }
 
 .hero .left {
-  background: rgb(220, 11, 11);
+  background: rgb(137, 135, 135);
   display: flex;
   justify-content: flex-end;
   flex: 2;
@@ -62,7 +63,7 @@ body {
 }
 
 .hero .right {
-  background: rgb(15, 59, 189);
+  background: rgb(113, 117, 129);
   display: flex;
   flex: 3;
   flex-direction: column;
@@ -72,6 +73,9 @@ body {
 
 .hero .knowmore-btn {
   width: 200px;
+  border: none;
+  border-radius: 20px;
+  height: 35px;
 }
 
 @media screen and (max-width: 612px) {
@@ -92,7 +96,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: rgb(222, 132, 132);
+  background: rgba(225, 223, 223, 0.842);
+
   color: rgb(56, 43, 28);
 }
 
@@ -103,7 +108,7 @@ body {
 
 /* ---------CARDS-------- */
 .cards {
-  background: rgb(81, 79, 79);
+  background: rgb(222, 218, 218);
   color: bisque;
   display: flex;
   justify-content: space-around;
@@ -144,8 +149,9 @@ body {
 }
 /* -------------SIGNUP--------------- */
 .sign-up {
-  background: rgb(70, 33, 33);
-  color: rgb(216, 200, 181);
+  background: rgba(225, 223, 223, 0.842);
+  color: rgb(210, 136, 45);
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -169,6 +175,7 @@ body {
 }
 .sign-up form select {
   border-radius: 5px;
+  border: none;
   margin: 10px;
   height: 30px;
 }
