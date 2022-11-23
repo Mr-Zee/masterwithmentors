@@ -51,7 +51,7 @@ body {
 .hero .left {
   background: rgb(220, 11, 11);
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   flex: 2;
   padding: 20px;
 }
@@ -146,6 +146,35 @@ body {
 .sign-up {
   background: rgb(70, 33, 33);
   color: rgb(216, 200, 181);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sign-up form {
+  border-radius: 15px;
+  width: 800px;
+  background: rgba(152, 154, 152, 0.603);
+  display: flex;
+  flex-direction: column;
+  padding: 15px 0;
+}
+
+.sign-up form input {
+  border-radius: 5px;
+  margin: 10px;
+  height: 30px;
+  border: none;
+}
+.sign-up form select {
+  border-radius: 5px;
+  margin: 10px;
+  height: 30px;
+}
+.form-btn {
+  align-self: center;
+  width: 15%;
 }
 
 /* ----------------FOOTER-------------- */
