@@ -5,6 +5,7 @@ import Navbar from "./Navbar";
 import Cards from "./Cards";
 import SignUp from "./SignUp";
 import Footer from "./Footer";
+import Testimonial from "./Testimonial";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <About />
       <Cards />
       <SignUp />
+      <Testimonial />
       <Footer />
     </div>
   );

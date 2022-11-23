@@ -183,6 +183,37 @@ body {
   align-self: center;
   width: 15%;
 }
+/* -------------Tcard---------------- */
+.tcards {
+  background: rgb(222, 218, 218);
+  color: bisque;
+  display: flex;
+  flex-direction: column;
+}
+.tcards h1 {
+  color: rgb(184, 142, 28);
+  text-align: center;
+}
+.tlists {
+  display: inline-block;
+  display: flex;
+  justify-content: space-around;
+}
+.tcard {
+  background: rgb(234, 226, 226);
+  margin: 8px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #000;
+  border-radius: 8%;
+}
+
+.tcard img {
+  max-width: 40%;
+  border-radius: 50%;
+}
 
 /* ----------------FOOTER-------------- */
 .footer {
