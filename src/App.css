@@ -181,4 +181,10 @@ body {
 .footer {
   background: rgb(205, 158, 158);
   color: rgb(116, 71, 16);
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer p {
+  text-align: center;
 }
