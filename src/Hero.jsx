@@ -8,8 +8,11 @@ function Hero() {
       </div>
       <div className="right">
         <h1>MENTOR WITH MASTER</h1>
-        <p>Lorem ipsum dolor sit.</p>
-        <button className="knowmore-btn">know more</button>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam maxime
+          nesciunt nam velit, libero similique.
+        </p>
+        <button className="knowmore-btn">Know More</button>
       </div>
     </div>
   );

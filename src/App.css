@@ -30,9 +30,30 @@ body {
   color: aliceblue;
 }
 .navbar .reg-btn {
-  height: 30px;
+  height: 45px;
+  width: 99px;
+  background: rgba(0, 0, 0, 0);
+  color: #6badc9;
+  border: 2px solid white;
+  border-color: #6badc9;
+  border-radius: 1.5rem;
+  margin: 10px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  font-family: "Roboto";
 }
 
+.button-81:hover {
+  background-color: #1e293b;
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .button-81 {
+    font-size: 1.125rem;
+    padding: 1rem 2rem;
+  }
+}
 @media screen and (max-width: 612px) {
   .navbar {
     flex-direction: column;
@@ -45,7 +66,6 @@ body {
 /* --------------- HERO ----------------- */
 .hero {
   background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
-
   color: bisque;
   justify-content: space-around;
 }
@@ -77,7 +97,17 @@ body {
   width: 200px;
   border: none;
   border-radius: 20px;
-  height: 35px;
+  height: 45px;
+  background: rgba(0, 0, 0, 0);
+  color: rgba(255, 255, 255, 0.594);
+  border: 2px solid white;
+  border-color: rgba(255, 255, 255, 0.411);
+  border-radius: 1.5rem;
+  margin: 10px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  font-family: "Roboto";
+  letter-spacing: 3px;
 }
 
 @media screen and (max-width: 612px) {
@@ -213,10 +243,15 @@ body {
   color: #000;
   border-radius: 8%;
 }
-
+.tcard-desc {
+  padding: 3px 15px;
+}
 .tcard img {
   max-width: 40%;
   border-radius: 50%;
+}
+.tdown {
+  display: flex;
 }
 
 /* ----------------FOOTER-------------- */

@@ -6,9 +6,6 @@ function Cards() {
     <div className="cards section">
       <Card />
       <Card />
-      <Card />
-      <Card />
-      <Card />
     </div>
   );
 }
