@@ -6,16 +6,13 @@ function Navbar() {
       <h2>Mentors</h2>
       <div className="nav-items">
         <a className="nav-item" href="">
-          sample
+          Home
         </a>
         <a className="nav-item" href="">
-          sample
+          About
         </a>
         <a className="nav-item" href="">
-          sample
-        </a>
-        <a className="nav-item" href="">
-          sample
+          Contact
         </a>
       </div>
       <button className="reg-btn">Register</button>

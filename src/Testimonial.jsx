@@ -8,9 +8,6 @@ function Testimonial() {
       <div className="tlists">
         <TCard />
         <TCard />
-        <TCard />
-        <TCard />
-        <TCard />
       </div>
     </div>
   );

@@ -4,10 +4,10 @@ function Hero() {
   return (
     <div className="hero section">
       <div className="left">
-        <img src="./image/img.webp" alt="" />
+        <img src="./image/hero.png" alt="" />
       </div>
       <div className="right">
-        <h1>Mentor with master</h1>
+        <h1>MENTOR WITH MASTER</h1>
         <p>Lorem ipsum dolor sit.</p>
         <button className="knowmore-btn">know more</button>
       </div>
