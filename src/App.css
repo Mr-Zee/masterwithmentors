@@ -277,12 +277,21 @@ body {
   display: flex;
   justify-content: space-around;
 }
-
+.footer h1 {
+  padding: 50px 0;
+}
 .footer p {
   text-align: center;
 }
 
-/* line  */
+.copyright {
+  background: rgb(205, 158, 158);
+  text-align: center;
+  margin: 0;
+  padding: 20px 0;
+}
+
+/*------------- line --------- */
 .line {
   justify-content: center;
   padding-top: 3rem;

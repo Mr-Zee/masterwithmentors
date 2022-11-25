@@ -6,7 +6,7 @@ function SignUp() {
   }
   return (
     <div className="sign-up section">
-      <h3>Get a Mentor Now</h3>
+      <h1>Get a Mentor Now</h1>
       <form>
         <input type="text" id="name" placeholder="Name" className="input" />
         <input

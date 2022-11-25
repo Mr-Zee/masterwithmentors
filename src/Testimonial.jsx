@@ -30,11 +30,11 @@ function Testimonial() {
   ];
   return (
     <div className="tcards section">
+      <h1>Let's Hear From Our Learners</h1>
       <div className="tlists">
         {items.map((item) => (
           <TCard title={item.title} name={item.name} img={item.img} />
         ))}
-        <h1>Let's Hear From Our Learners</h1>
       </div>
     </div>
   );
