@@ -1,23 +1,42 @@
 import React, { useRef } from "react";
 
-function Navbar() {
-  const paraRef = useRef(null);
-  const executeScroll = () => {
-    paraRef.current.scrollIntoView();
-  };
+function Navbar(props) {
+  // const paraRef = useRef(null);
+  // const executeScroll = () => {
+  //   console.log("click");
+  //   paraRef.current.scrollIntoView();
+  // };
   return (
     <div className="navbar section">
-      <h2 ref={paraRef}>Mentors</h2>
+      <h2>Mentors</h2>
       <div className="nav-items">
-        <a className="nav-item" href="" onClick={executeScroll}>
+        {/* <a
+          className="nav-item"
+          onClick={(e) => {
+            e.preventDefault();
+            props.scrollToSection();
+          }}
+        >
           Home
-        </a>
-        <a className="nav-item" href="" onClick={executeScroll}>
+        </a> */}
+        <a
+          className="nav-item"
+          onClick={(e) => {
+            e.preventDefault();
+            props.scrollToSection();
+          }}
+        >
           About
         </a>
-        <a className="nav-item" href="" onClick={executeScroll}>
+        {/* <a
+          className="nav-item"
+          onClick={(e) => {
+            e.preventDefault();
+            props.scrollToSection();
+          }}
+        >
           Contact
-        </a>
+        </a> */}
       </div>
       <button className="reg-btn">Register</button>
     </div>

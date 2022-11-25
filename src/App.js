@@ -1,5 +1,5 @@
 import "./App.css";
-import React from "react";
+import React, { useRef } from "react";
 import About from "./About";
 import Hero from "./Hero";
 import Navbar from "./Navbar";
@@ -9,15 +9,23 @@ import Footer from "./Footer";
 import Testimonial from "./Testimonial";
 
 function App() {
+  const scrollToSection = (sectionName) => {
+    console.log("linked");
+    aboutRef.current.scrollIntoView();
+    // aboutRef.scroll();
+    // contactRef.scroll();
+  };
+  const aboutRef = useRef(null);
+  const contactRef = useRef(null);
   return (
     <div className="App">
-      <Navbar />
+      <Navbar scrollToSection={scrollToSection} />
       <Hero />
-      <About />
+      <About ref={aboutRef} />
       <Cards />
       <SignUp />
       <Testimonial />
-      <Footer />
+      <Footer ref={contactRef} />
     </div>
   );
 }

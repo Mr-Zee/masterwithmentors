@@ -25,10 +25,16 @@ function SignUp() {
           pattern="[0-9]{10}"
           required
         />
-        <p>I am a Mentor</p>
-        <input type="radio" value="Mentor" name="mentor" />
-        <p>I Need a Mentor</p>
-        <input type="radio" value="User" name="user" />
+        <div className="radio">
+          <label>
+            <input type="radio" value="Mentor" name="mentor" />
+            <span>I am a Mentor</span>
+          </label>
+          <label>
+            <input type="radio" value="User" name="user" />
+            <span> I Need a Mentor</span>
+          </label>
+        </div>
         <input
           type="submit"
           className="form-btn"
