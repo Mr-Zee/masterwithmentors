@@ -1,12 +1,12 @@
-import React from "react";
+import React, { forwardRef } from "react";
 
-function SignUp() {
+const SignUp = forwardRef((props, ref) => {
   function saveUser(e) {
     e.preventDefault();
   }
   return (
-    <div className="sign-up section">
-      <h1>Get a Mentor Now</h1>
+    <div ref={ref} className="sign-up section">
+      <h1>Get Connect With Our Best Mentors</h1>
       <form>
         <input type="text" id="name" placeholder="Name" className="input" />
         <input
@@ -49,6 +49,6 @@ function SignUp() {
       </div>
     </div>
   );
-}
+});
 
 export default SignUp;

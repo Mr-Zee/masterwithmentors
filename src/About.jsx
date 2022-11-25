@@ -1,8 +1,8 @@
-import React, { useRef } from "react";
+import React, { forwardRef } from "react";
 
-function About() {
+const About = forwardRef((props, ref) => {
   return (
-    <div className="about section">
+    <div ref={ref} className="about section">
       <h2>About</h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, dolore
@@ -14,6 +14,6 @@ function About() {
       </p>
     </div>
   );
-}
+});
 
 export default About;

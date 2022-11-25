@@ -1,8 +1,8 @@
-import React from "react";
+import React, { forwardRef } from "react";
 
-function Hero() {
+const Hero = forwardRef((props, ref) => {
   return (
-    <div className="hero section">
+    <div ref={ref} className="hero section">
       <div className="left">
         <img src="./image/hero.png" alt="" />
       </div>
@@ -12,10 +12,18 @@ function Hero() {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam maxime
           nesciunt nam velit, libero similique.
         </p>
-        <button className="knowmore-btn">Know More</button>
+        <button
+          onClick={(e) => {
+            e.preventDefault();
+            props.scrollToSection("about");
+          }}
+          className="knowmore-btn"
+        >
+          Know More
+        </button>
       </div>
     </div>
   );
-}
+});
 
 export default Hero;

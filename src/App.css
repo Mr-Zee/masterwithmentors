@@ -157,6 +157,7 @@ body {
   text-align: center;
 }
 .card img {
+  height: 100px;
   max-width: 100%;
 }
 

@@ -9,21 +9,37 @@ import Footer from "./Footer";
 import Testimonial from "./Testimonial";
 
 function App() {
-  const scrollToSection = (sectionName) => {
-    console.log("linked");
-    aboutRef.current.scrollIntoView();
-    // aboutRef.scroll();
-    // contactRef.scroll();
-  };
   const aboutRef = useRef(null);
+  const homeRef = useRef(null);
   const contactRef = useRef(null);
+  const signUpRef = useRef(null);
+
+  const scrollToSection = (sectionName) => {
+    switch (sectionName) {
+      case "home":
+        homeRef.current.scrollIntoView({});
+        break;
+      case "about":
+        aboutRef.current.scrollIntoView({});
+        break;
+      case "contact":
+        contactRef.current.scrollIntoView({});
+        break;
+      case "signUp":
+        signUpRef.current.scrollIntoView({});
+        break;
+
+      default:
+        break;
+    }
+  };
   return (
     <div className="App">
       <Navbar scrollToSection={scrollToSection} />
-      <Hero />
+      <Hero ref={homeRef} scrollToSection={scrollToSection} />
       <About ref={aboutRef} />
       <Cards />
-      <SignUp />
+      <SignUp ref={signUpRef} />
       <Testimonial />
       <Footer ref={contactRef} />
     </div>

@@ -4,23 +4,23 @@ import Card from "./Card";
 function Cards() {
   const items = [
     {
-      title: "coach",
-      desc: "asugad kjdghd",
+      title: "Career Coach",
+      desc: "Need a assist for your Career Guidance ,Get in Touch with Us",
       img: "./image/icon.png",
     },
     {
       title: "spiritual Coach",
-      desc: "asugad kjdghd",
+      desc: "Makes Your Dreams Into Reality",
       img: "./image/icon2.png",
     },
     {
       title: "Life Coach",
-      desc: "asugad kjdghd",
+      desc: "Is you Stuck Inside your Comfort Zone ??.. Meet With Our Mentor",
       img: "./image/icon.png",
     },
     {
       title: "Physical coach",
-      desc: "asugad kjdghd",
+      desc: " PUSH  UP Your limit To Extra Ordinary",
       img: "./image/icon2.png",
     },
   ];
