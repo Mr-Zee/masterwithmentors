@@ -210,7 +210,10 @@ body {
   color: rgb(255, 255, 255);
   background: #2c536470;
 }
-
+form p {
+  color: #000;
+  padding-left: 20px;
+}
 @media screen and (max-width: 870px) {
   .sign-up form {
     width: 100%;
@@ -298,7 +301,6 @@ body {
   .footer {
     display: flex;
     flex-direction: column;
-    
   }
 }
 

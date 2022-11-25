@@ -16,7 +16,6 @@ function SignUp() {
           className="input"
           placeholder="Email"
         />
-
         <input
           type="tel"
           id="phone"
@@ -26,6 +25,10 @@ function SignUp() {
           pattern="[0-9]{10}"
           required
         />
+        <p>I am a Mentor</p>
+        <input type="radio" value="Mentor" name="mentor" />
+        <p>I Need a Mentor</p>
+        <input type="radio" value="User" name="user" />
         <input
           type="submit"
           className="form-btn"
