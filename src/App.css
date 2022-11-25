@@ -33,19 +33,14 @@ body {
   height: 45px;
   width: 99px;
   background: rgba(0, 0, 0, 0);
-  color: #6badc9;
+  color: rgba(255, 255, 255, 0.594);
   border: 2px solid white;
-  border-color: #6badc9;
+  border-color: rgba(255, 255, 255, 0.411);
   border-radius: 1.5rem;
   margin: 10px;
   font-size: 0.9rem;
   cursor: pointer;
   font-family: "Roboto";
-}
-
-.button-81:hover {
-  background-color: #1e293b;
-  color: #fff;
 }
 
 @media (min-width: 768px) {
@@ -195,14 +190,15 @@ body {
 
 .sign-up form {
   border-radius: 15px;
+  border: 1.5px solid #1a435598;
   width: 800px;
-  background: rgba(152, 154, 152, 0.603);
+  background: rgba(255, 255, 255, 0.413);
   display: flex;
   flex-direction: column;
   padding: 15px 0;
 }
 
-.sign-up form input {
+.sign-up form .input {
   border-radius: 5px;
   margin: 10px;
   height: 30px;
@@ -216,7 +212,14 @@ body {
 } */
 .form-btn {
   align-self: center;
+  margin: 10px;
+  height: 30px;
   width: 15%;
+  cursor: pointer;
+  border-radius: 1.5rem;
+  border: none;
+  color: rgb(255, 255, 255);
+  background: #2c536470;
 }
 /* -------------Tcard---------------- */
 .tcards {
@@ -255,6 +258,18 @@ body {
   display: flex;
 }
 
+@media screen and (max-width: 612px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    margin: 16px auto;
+    width: 100%;
+    border-radius: 10px;
+  }
+}
+
 /* ----------------FOOTER-------------- */
 .footer {
   background: rgb(205, 158, 158);
@@ -278,4 +293,16 @@ body {
   height: 2px;
   background: #c7c5c3;
   border-radius: 30%;
+}
+
+@media screen and (max-width: 612px) {
+  .line {
+    flex-direction: column;
+    align-items: center;
+  }
+  .small-line {
+    margin: 16px;
+    width: 30rem;
+    border-radius: 10px;
+  }
 }
