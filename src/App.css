@@ -79,7 +79,6 @@ body {
   flex-direction: column;
   justify-content: center;
   padding: 20px;
-  margin: 0px 80px;
 }
 
 .hero .knowmore-btn {
@@ -117,7 +116,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #e5e7eb;
+  background: #ffffff;
 
   color: rgb(56, 43, 28);
 }
@@ -129,7 +128,7 @@ body {
 
 /* ---------CARDS-------- */
 .cards {
-  background: #e5e7eb;
+  background: #ffffff;
   color: bisque;
   display: flex;
   flex-wrap: wrap;
@@ -138,7 +137,8 @@ body {
 
 /* ------------CARD----------- */
 .card {
-  background: rgb(251, 251, 251);
+  background: rgb(255, 255, 255);
+  box-shadow: 0px 0px 15px #cdd4d6;
   margin: 8px;
   width: 200px;
   display: flex;
@@ -174,7 +174,7 @@ body {
 }
 /* -------------SIGNUP--------------- */
 .sign-up {
-  background: #e5e7eb;
+  background: #ffffff;
   color: rgb(210, 136, 45);
 
   display: flex;
@@ -185,7 +185,9 @@ body {
 
 .sign-up form {
   border-radius: 15px;
-  border: 1.5px solid #1a435598;
+  /* border: 1.5px solid #1a435598; */
+  box-shadow: 0px 0px 15px #cdd4d6;
+
   width: 800px;
   background: rgba(255, 255, 255, 0.413);
   display: flex;
@@ -224,7 +226,7 @@ form .radio {
 }
 /* -------------Tcard---------------- */
 .tcards {
-  background: #e5e7eb;
+  background: #ffffff;
   color: bisque;
   display: flex;
   flex-direction: column;
@@ -239,7 +241,9 @@ form .radio {
   justify-content: space-around;
 }
 .tcard {
-  background: rgb(234, 226, 226);
+  /* background: rgb(255, 255, 255); */
+  box-shadow: 0px 0px 15px #cdd4d6;
+
   margin: 8px;
   width: 200px;
   display: flex;
@@ -273,8 +277,10 @@ form .radio {
 
 /* ----------------FOOTER-------------- */
 .footer {
-  background: rgb(205, 158, 158);
-  color: rgb(116, 71, 16);
+  /* background: rgb(205, 158, 158); */
+  background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+
+  color: white;
   display: flex;
   justify-content: space-evenly;
 }
@@ -288,7 +294,9 @@ form .radio {
 }
 
 .copyright {
-  background: rgb(205, 158, 158);
+  /* background: rgb(205, 158, 158); */
+  background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+  color: #ffffff;
   text-align: center;
   margin: 0;
   padding: 20px 0;
@@ -300,10 +308,14 @@ form .radio {
   border: 2px solid #2d7594;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 612px) {
   .footer {
     display: flex;
     flex-direction: column;
+  }
+  .map img {
+    display: block;
+    margin: auto;
   }
 }
 
@@ -327,9 +339,9 @@ form .radio {
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 612px) {
   .line .small-line {
-    width: 20rem;
+    width: 12rem;
     display: flex;
   }
 }
