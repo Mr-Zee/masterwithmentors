@@ -10,7 +10,7 @@ body {
 
 @media screen and (min-width: 1020px) {
   .section {
-    padding: 50px 100px;
+    padding: 20px 100px 50px 100px;
   }
 }
 /* ----------------------NAV BAR-----------------*/
@@ -128,7 +128,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: rgba(225, 223, 223, 0.842);
+  background: #e5e7eb;
 
   color: rgb(56, 43, 28);
 }
@@ -140,9 +140,10 @@ body {
 
 /* ---------CARDS-------- */
 .cards {
-  background: rgb(222, 218, 218);
+  background: #e5e7eb;
   color: bisque;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 
@@ -183,7 +184,7 @@ body {
 }
 /* -------------SIGNUP--------------- */
 .sign-up {
-  background: rgba(225, 223, 223, 0.842);
+  background: #e5e7eb;
   color: rgb(210, 136, 45);
 
   display: flex;
@@ -219,7 +220,7 @@ body {
 }
 /* -------------Tcard---------------- */
 .tcards {
-  background: rgb(222, 218, 218);
+  background: #e5e7eb;
   color: bisque;
   display: flex;
   flex-direction: column;
@@ -264,4 +265,17 @@ body {
 
 .footer p {
   text-align: center;
+}
+
+/* line  */
+.line {
+  justify-content: center;
+  padding-top: 3rem;
+}
+
+.line .small-line {
+  width: 50rem;
+  height: 2px;
+  background: #c7c5c3;
+  border-radius: 30%;
 }

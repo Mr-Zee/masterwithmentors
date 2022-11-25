@@ -28,6 +28,9 @@ function SignUp() {
           }}
         />
       </form>
+      <div class="line">
+        <div class="small-line"></div>
+      </div>
     </div>
   );
 }
