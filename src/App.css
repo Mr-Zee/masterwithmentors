@@ -23,12 +23,16 @@ body {
   align-items: center;
   padding: 16px;
 }
-
+.navbar h2 {
+  cursor: pointer;
+}
 .navbar .nav-item {
   margin: 8px 16px;
   text-decoration: none;
   color: aliceblue;
+  cursor: pointer;
 }
+
 .navbar .reg-btn {
   height: 45px;
   width: 99px;
